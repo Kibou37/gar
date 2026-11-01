@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гарантии</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <noscript>
+        <style>
+            .block3__reveal,
+            .block2__card {
+                opacity: 1 !important;
+                transform: none !important;
+                animation: none !important;
+            }
+        </style>
+    </noscript>
+    <style>
+        :root {
+            --color-dark: rgba(43, 43, 44, 1);
+            --color-black: rgba(15, 18, 23, 1);
+            --color-white: rgba(255, 255, 255, 1);
+            --color-green-primary: rgba(76, 197, 116, 1);
+            --color-green-button: rgba(85, 205, 108, 1);
+            --color-green-button-light: rgba(97, 215, 119, 1);
+            --color-green-button-hover: rgba(112, 209, 144, 1);
+            --color-green-light-bg: rgba(219, 243, 227, 1);
+            --color-green-dark: rgba(61, 158, 93, 1);
+            --color-gray-text: rgba(85, 86, 88, 1);
+            --color-gray-text-secondary: #555658;
+            --color-gray-bg: rgba(238, 239, 241, 1);
+            --color-gray-icon: rgba(170, 173, 176, 0.4);
+            --color-blue-dark: rgba(74, 90, 114, 1);
+            --container-width: 1246px;
+            --section-padding: 80px 30px;
+            --padding-tablet: 60px 30px;
+            --padding-mobile: 60px 15px;
+            --border-radius-m: 5px;
+            --border-radius-sm: 10px;
+            --border-radius-btn: 119px;
+            --font-family-primary: 'Open Sans', sans-serif;
+            --font-family-secondary: 'Inter', sans-serif;
+            --font-size-h1: 40px;
+            --font-size-h2: 20px;
+            --font-size-text: 16px;
+            --font-size-small: 14px;
+            --font-size-medium: 18px;
+            --font-size-tablet-h1: 27px;
+            --font-weight-semibold: 600;
+            --line-height: 1.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            font-weight: 400;
+            background-color: var(--color-white);
+            line-height: var(--line-height);
+            color: var(--color-dark);
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        /* ========== BLOCK 1: шаблон hero ========== */
+        .block1 {
+            background-color: var(--color-white);
+            padding: var(--padding-tablet);
+        }
+
+        .block1__inner {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 55px;
+        }
+
+        .block1__content {
+            flex: 0 1 536px;
+            width: 536px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .block1__intro {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .block1__heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .block1__label {
+            font-family: var(--font-family-secondary);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.35px;
+            text-transform: uppercase;
+            color: var(--color-dark);
+        }
+
+        .block1__line {
+            display: block;
+        }
+
+        .block1__title {
+            font-family: var(--font-family-secondary);
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 1;
+            color: var(--color-dark);
+        }
+
+        .block1__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .block1__item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            line-height: 1.35;
+            color: var(--color-dark);
+        }
+
+        .block1__item img {
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .block1__button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 62px;
+            padding: 20px 35px;
+            border: none;
+            border-radius: var(--border-radius-btn);
+            background-image: linear-gradient(180deg, var(--color-green-button-light), var(--color-green-button));
+            color: var(--color-white);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .block1__button:hover {
+            background-image: none;
+            background-color: var(--color-green-button-hover);
+        }
+
+        .block1__media {
+            flex: 1 1 611px;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .block1__photo {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 611 / 286;
+            object-fit: cover;
+            border-radius: var(--border-radius-sm);
+        }
+
+        .block1__chips {
+            display: flex;
+            gap: 20px;
+            container-type: inline-size;
+        }
+
+        .block1__chip {
+            flex: 181 1 0;
+            min-height: 66px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 18px;
+            border-radius: var(--border-radius-m);
+            background-image: linear-gradient(100deg, #eeeff1 0%, #d8f4e0 15%, #a6ebbf 40%, #7ee09a 50%, #6ad888 75%, #62d87b 85%, #61d777 100%);
+            background-repeat: no-repeat;
+            background-size: 100cqi 100%;
+            background-position: left top;
+            font-size: 16px;
+            line-height: 1.35;
+            text-align: center;
+            color: var(--color-dark);
+        }
+
+        .block1__chip:nth-child(2) {
+            flex-grow: 208;
+            background-position-x: calc(-1 * ((100cqi - 40px) * 181 / 570 + 20px));
+        }
+
+        .block1__chip:nth-child(3) {
+            background-position-x: calc(-1 * ((100cqi - 40px) * 389 / 570 + 40px));
+        }
+
+        /* ========== BLOCK 4: ВЭД-аутсорсинг ========== */
+        .block4 {
+            padding: var(--section-padding);
+            background-color: var(--color-white);
+        }
+
+        .block4__container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .block4__h1 {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            margin-bottom: 50px;
+        }
+
+        .block4__content {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .block4__part1,
+        .block4__part2,
+        .block4__part3 {
+            flex: 1;
+        }
+
+        .block4__part2,
+        .block4__part3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block4__part1-img {
+            width: 100%;
+            height: auto;
+            max-height: 546px;
+            object-fit: cover;
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .block4__part1-img--animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .block4__part2-block {
+            width: 100%;
+            padding: 21px 17px 48px 16px;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .block4__part2-block--animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .block4__part2-block--green {
+            background-color: var(--color-green-primary);
+            transform: translateY(50px);
+        }
+
+        .block4__part2-block--green.block4__part2-block--animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .block4__part2-title {
+            font-size: var(--font-size-text);
+            font-weight: 700;
+            color: var(--color-black);
+            margin-bottom: 12px;
+        }
+
+        .block4__part2-block--green .block4__part2-title,
+        .block4__part2-block--green .block4__part2-text,
+        .block4__part2-list-item,
+        .block4__part2-list-item::before {
+            color: var(--color-white);
+        }
+
+        .block4__part2-text {
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin: 0;
+        }
+
+        .block4__part2-list {
+            list-style: none;
+            padding: 2px 3px;
+        }
+
+        .block4__part2-list-item {
+            font-size: var(--font-size-text);
+            line-height: var(--line-height);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .block4__part2-list-item::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .block4__part3-img {
+            width: 100%;
+            height: auto;
+            max-height: 260px;
+            object-fit: cover;
+            opacity: 0;
+            transform: translateX(100px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .block4__part3-img--animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .block4__part3-text-block {
+            width: 100%;
+            padding: 13px 18px 18px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            opacity: 0;
+            transform: translateX(100px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .block4__part3-text-block--animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .block4__part3-bar {
+            width: 188px;
+            max-width: 188px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .block4__part3-counter {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--color-gray-text-secondary);
+            line-height: 1;
+        }
+
+        .block4__part3-text {
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin: 0;
+        }
+
+        .block4__footer {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .block4__footer-text {
+            font-size: var(--font-size-text);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin: 0;
+        }
+
+        .block4__footer-button {
+            flex-shrink: 0;
+            width: 241px;
+            height: 50px;
+            background-color: var(--color-green-button);
+            border-radius: var(--border-radius-btn);
+            border: none;
+            font-size: var(--font-size-text);
+            font-weight: 600;
+            color: var(--color-white);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .block4__footer-button:hover {
+            background-color: var(--color-green-button-hover);
+        }
+
+        /* ========== BLOCK 5: Наша команда ========== */
+        .block5 {
+            background-color: var(--color-gray-bg);
+            padding: var(--section-padding);
+        }
+
+        .block5__h1 {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            margin-bottom: 50px;
+        }
+
+        .block5__cards {
+            margin-left: 43px;
+            overflow: hidden;
+            position: relative;
+            width: 91.5%;
+        }
+
+        .block5__cards-wrapper {
+            display: flex;
+            gap: 30px;
+            transition: transform 0.6s ease-in-out;
+            will-change: transform;
+        }
+
+        .block5__card {
+            flex: 0 0 calc((100% - 60px) / 3);
+            max-width: calc((100% - 60px) / 3);
+            min-width: calc((100% - 60px) / 3);
+            background-color: var(--color-white);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .block5__card-img {
+            width: 100%;
+            height: 456px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .block5__card-content {
+            padding: 20px 10px 20px 12px;
+            border-top: 2.44px solid #4A5A72;
+            border-bottom: 1px solid var(--color-gray-icon);
+            border-right: 1px solid var(--color-gray-icon);
+            border-left: 1px solid var(--color-gray-icon);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .block5__card-h2 {
+            font-size: var(--font-size-text);
+            font-weight: 700;
+            color: var(--color-black);
+            margin-bottom: 15px;
+        }
+
+        .block5__card-text {
+            font-size: var(--font-size-text);
+            color: var(--color-black);
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        .block5__nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .block5__pagination {
+            padding-right: 65px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        .block5__pagination-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--color-blue-dark);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+
+        .block5__pagination-dot:not(.block5__pagination-dot--active) {
+            background-color: #DBDEE3;
+        }
+
+        .block5__more-btn {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            margin-top: 25px;
+            font-size: var(--font-size-text);
+            color: #4A5A72;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .block5__more-btn-icon {
+            width: 9px;
+            height: 7px;
+            transition: transform 0.3s ease;
+        }
+
+        .block5__more-btn--expanded .block5__more-btn-icon {
+            transform: rotate(180deg);
+        }
+
+        /* ========== BLOCK 6: Наши офисы ========== */
+        .block6 {
+            background-color: var(--color-white);
+            padding: var(--section-padding);
+        }
+
+        .block6__h1 {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            margin-bottom: 50px;
+        }
+
+        .block6__cards {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .block6__cards-wrapper {
+            display: flex;
+            gap: 30px;
+            will-change: transform;
+            transition: transform 0.1s linear;
+        }
+
+        .block6__card {
+            flex: 0 0 calc((100% - 60px) / 3);
+            max-width: calc((100% - 60px) / 3);
+            min-width: calc((100% - 60px) / 3);
+            background-color: var(--color-gray-bg);
+            border: 1px solid var(--color-gray-icon);
+            border-radius: var(--border-radius-sm);
+            padding: 20px 20px 30px;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .block6__card-city {
+            font-size: var(--font-size-h2);
+            font-weight: 400;
+            color: var(--color-black);
+            margin-bottom: 10px;
+        }
+
+        .block6__card-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .block6__card-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .block6__card-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            object-fit: contain;
+            margin-top: 2px;
+        }
+
+        .block6__card-text {
+            font-size: var(--font-size-text);
+            color: var(--color-dark);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .section-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1100px) {
+            .block1__inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 40px;
+            }
+
+            .block1__content {
+                width: 100%;
+                flex-basis: auto;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+
+            .block1__content,
+            .block1__intro,
+            .block1__media {
+                display: contents;
+            }
+
+            .block1__inner {
+                gap: 24px;
+            }
+
+            .block1__list {
+                display: none;
+            }
+
+            .block1__heading {
+                order: 1;
+            }
+
+            .block1__photo {
+                order: 2;
+            }
+
+            .block1__chips {
+                order: 3;
+            }
+
+            .block1__button {
+                order: 4;
+                width: 100%;
+            }
+
+            .block4 {
+                padding: var(--padding-tablet);
+            }
+
+            .block4__h1 {
+                font-size: var(--font-size-tablet-h1);
+                margin-bottom: 30px;
+            }
+
+            .block4__content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .block4__part1,
+            .block4__part2,
+            .block4__part3 {
+                width: 100%;
+            }
+
+            .block4__part2-title .block4__break,
+            .block4__part3-text .block4__break {
+                display: none;
+            }
+
+            .block4__part3-text-block {
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                padding: 12px 0 0 10px;
+            }
+
+            .block4__part3-text {
+                font-size: var(--font-size-medium);
+            }
+
+            .block4__part3-counter {
+                color: var(--color-dark);
+                margin-right: 15px;
+            }
+
+            .block4__footer {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .block5__cards {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .block5__card {
+                flex-basis: calc((100% - 30px) / 2);
+                max-width: calc((100% - 30px) / 2);
+                min-width: calc((100% - 30px) / 2);
+            }
+
+            .block6__card {
+                flex-basis: calc((100% - 30px) / 2);
+                max-width: calc((100% - 30px) / 2);
+                min-width: calc((100% - 30px) / 2);
+                padding: 20px 15px 30px 19px;
+            }
+        }
+
+        @media (max-width: 800px) {
+
+            .block5,
+            .block6 {
+                padding: var(--padding-tablet);
+            }
+
+            .block5__card {
+                flex-basis: calc((100% - 20px) / 2);
+                max-width: calc((100% - 20px) / 2);
+                min-width: calc((100% - 20px) / 2);
+            }
+
+            .block5__cards-wrapper {
+                gap: 20px;
+            }
+
+            .block5__pagination {
+                padding: 0;
+                justify-content: center;
+            }
+
+            .block6__card {
+                flex-basis: calc((100% - 20px) / 2);
+                max-width: calc((100% - 20px) / 2);
+                min-width: calc((100% - 20px) / 2);
+            }
+
+            .block6__cards-wrapper {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block1 {
+                padding: var(--padding-mobile);
+            }
+
+            .block1__title {
+                font-size: 36px;
+            }
+
+            .block1__item {
+                align-items: flex-start;
+                font-size: 16px;
+            }
+
+            .block1__chips {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .block1__chip,
+            .block1__chip:nth-child(2),
+            .block1__chip:nth-child(3) {
+                background-image: linear-gradient(100deg, #eeeff1 25%, #61d777 140%);
+                background-size: 100% 100%;
+                background-position: left top;
+            }
+
+            .block1__button {
+                margin-top: 26px;
+                width: 100%;
+            }
+
+            .block4 {
+                padding: var(--padding-mobile);
+            }
+
+            .block4__h1,
+            .block5__h1,
+            .block6__h1 {
+                font-size: var(--font-size-tablet-h1);
+                margin-bottom: 30px;
+            }
+
+            .block4__h1 {
+                padding: 0 15px;
+            }
+
+            .block4__content {
+                gap: 25px;
+            }
+
+            .block4__part2-block,
+            .block4__part3-text-block {
+                padding: 20px;
+            }
+
+            .block4__part3-text-block {
+                padding: 0 0 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .block4__footer {
+                margin-top: 30px;
+                gap: 20px;
+            }
+
+            .block4__footer-button {
+                width: 100%;
+            }
+
+            .block5 {
+                padding: var(--padding-mobile);
+            }
+
+            .block5__pagination {
+                justify-content: center;
+            }
+
+            .block6 {
+                padding: var(--padding-mobile);
+            }
+
+            .block6__cards-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .block6__card {
+                flex: 0 0 auto;
+                max-width: 100%;
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .block5__cards {
+                width: 100%;
+                margin-left: 0;
+                overflow: visible;
+            }
+
+            .block5__cards-wrapper {
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+            }
+
+            .block5__card {
+                flex: 0 0 auto;
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+            }
+
+            .block5__card:nth-child(n+4) {
+                display: none;
+            }
+
+            .block5__cards-wrapper--expanded .block5__card:nth-child(n+4) {
+                display: flex;
+            }
+
+            .block5__pagination {
+                display: none;
+            }
+
+            .block5__more-btn {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block6__cards {
+                overflow: visible;
+            }
+
+            .block6__cards-wrapper {
+                transform: none !important;
+            }
+
+            .block6__card--clone {
+                display: none;
+            }
+
+            .block6__card:not(.block6__card--clone) {
+                width: 100%;
+                display: flex;
+            }
+
+            .block6__card-text {
+                font-size: var(--font-size-small);
+            }
+
+            .block4 {
+                padding: 0 15px;
+            }
+
+            .block4__h1 {
+                margin-top: 60px;
+                padding: 0;
+            }
+
+            .block4__part2-title .block4__break {
+                display: block;
+            }
+
+
+            .block4__footer {
+                display: none;
+            }
+
+            .block4__part1-img {
+                max-height: 384px;
+                border-radius: var(--border-radius-m);
+            }
+
+            .block4__part2-block:first-child {
+                padding: 0 0 30px;
+            }
+
+            .block4__part3-img {
+                height: 338px;
+                max-height: 338px;
+                border-radius: var(--border-radius-m);
+            }
+
+            .block4__part3 {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media (min-width: 501px) {
+            .block5__pagination {
+                display: flex;
+            }
+
+            .block5__more-btn {
+                display: none;
+            }
+        }
+
+        /* ========== BLOCK 2: Почему с нами безопасно ========== */
+        .block2 {
+            background-color: var(--color-gray-bg);
+            padding: var(--section-padding);
+        }
+
+        .block2__title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: 1.35;
+            margin-bottom: 50px;
+        }
+
+        .block2__list {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .block2__card {
+            position: relative;
+            overflow: hidden;
+            background-color: var(--color-white);
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .block2--ready .block2__card {
+            opacity: 0;
+        }
+
+        .block2--animated .block2__card {
+            animation: block2-fade-up 0.7s ease both;
+        }
+
+        .block2--animated .block2__card:nth-child(2) {
+            animation-delay: 0.18s;
+        }
+
+        .block2--animated .block2__card:nth-child(3) {
+            animation-delay: 0.36s;
+        }
+
+        .block2--animated .block2__card:nth-child(4) {
+            animation-delay: 0.54s;
+        }
+
+        .block2__glow {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(97, 215, 119, 0.55) 0%, rgba(85, 205, 108, 0.16) 42%, rgba(85, 205, 108, 0) 70%);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        @keyframes block2-fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .block2__card-title {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            font-size: var(--font-size-text);
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--color-green-dark);
+        }
+
+        .block2__card-title img {
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .block2__packs {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
+        }
+
+        .block2__packs img {
+            position: absolute;
+            display: block;
+        }
+
+        .block2__packs img:nth-child(1) {
+            left: 0;
+            top: 10px;
+        }
+
+        .block2__packs img:nth-child(2) {
+            left: 6px;
+            top: 0;
+        }
+
+        .block2__packs img:nth-child(3) {
+            left: 12px;
+            top: 10px;
+        }
+
+        .block2__points {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            row-gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding-left: 10px;
+        }
+
+        .block2__points li {
+            max-width: 521px;
+            position: relative;
+            padding-left: 16px;
+            font-size: var(--font-size-text);
+            line-height: 1.4;
+            color: var(--color-gray-text);
+        }
+
+        .block2__points li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: var(--color-gray-text);
+        }
+
+        .block2__points strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 1000px) {
+            .block2__title {
+                font-size: var(--font-size-tablet-h1);
+                margin-bottom: 30px;
+            }
+
+            .block2__list {
+                gap: 20px;
+            }
+
+            .block2__points {
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block2 {
+                padding: var(--padding-tablet);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .block2 {
+                padding: var(--padding-mobile);
+            }
+
+            .block2__card {
+                gap: 20px;
+            }
+        }
+
+        /* ========== BLOCK 3: Сервисные гарантии ========== */
+        @keyframes block3-fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .block3 {
+            background-color: var(--color-green-light-bg);
+            padding: var(--section-padding);
+        }
+
+        .block3__intro {
+            margin-bottom: 50px;
+        }
+
+        .block3__title {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            line-height: var(--line-height);
+            margin-bottom: 0;
+        }
+
+        .block3__grid {
+            display: grid;
+            grid-template-columns: 210px 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .block3__image {
+            width: auto;
+            max-width: 225px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .block3__tags {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .block3__tag {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .block3__tag-icon {
+            flex-shrink: 0;
+            display: block;
+        }
+
+        .block3__tag-text {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-text);
+            font-weight: 400;
+            color: var(--color-gray-text);
+            line-height: 1.4;
+        }
+
+        .block3__tag-text strong {
+            font-weight: 700;
+        }
+
+        .block3__reveal {
+            opacity: 0;
+        }
+
+        .block3--animated .block3__reveal {
+            animation: block3-fade-up 0.7s ease forwards;
+        }
+
+        @media (max-width: 1000px) {
+            .block3__grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .block3__intro {
+                margin-bottom: 0;
+            }
+
+            .block3__title {
+                font-size: var(--font-size-tablet-h1);
+            }
+
+            .block3__image {
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .block3 {
+                padding: var(--padding-tablet);
+            }
+
+
+        }
+
+        @media (max-width: 700px) {
+            .block3 {
+                padding: var(--padding-mobile);
+            }
+
+            .block3__intro {
+                margin-bottom: 30px;
+            }
+
+            .block3__tags {
+                gap: 20px;
+            }
+
+            .block3__tag-text {
+                font-size: var(--font-size-small);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .block3__image {
+                display: block;
+            }
+
+            .block3__media {
+                display: flex;
+                justify-content: center;
+            }
+
+            .block3__tag-text {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .block1__chip {
+                font-size: 20px;
+                text-align: left;
+                padding: 6px 20px;
+            }
+
+            .block1__photo {
+                height: 246px;
+                aspect-ratio: auto;
+            }
+
+            .block2__card-title,
+            .block2__points li,
+            .block4__part2-text,
+            .block4__part2-list-item,
+            .block5__card-text,
+            .block3__tag-text {
+                font-size: 15px;
+            }
+
+
+            .block4__part2-title,
+            .block5__card-h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 361px) {
+            .block1__inner {
+                gap: 0;
+            }
+
+            .block1__photo {
+                height: 226px;
+                aspect-ratio: auto;
+                margin-top: 24px;
+            }
+
+            .block1__chips {
+                margin-top: 15px;
+            }
+
+            .block1__button {
+                margin-top: 50px;
+            }
+
+            .block2__card-title,
+            .block2__points li,
+            .block4__part2-text,
+            .block4__part2-list-item,
+            .block5__card-text,
+            .block3__tag-text {
+                font-size: 14px;
+            }
+
+        }
+
+        @media (min-width: 1001px) {
+
+            .block5__card,
+            .block6__card {
+                flex: 0 0 calc((100% - 60px) / 3);
+                max-width: calc((100% - 60px) / 3);
+                min-width: calc((100% - 60px) / 3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="block1" aria-labelledby="garantii-title">
+            <div class="block1__inner">
+                <div class="block1__content">
+                    <div class="block1__intro">
+                        <div class="block1__heading">
+                            <p class="block1__label">О компании</p>
+                            <img class="block1__line" src="image/block1/line.svg" alt="" width="164" height="5">
+                            <h1 class="block1__title" id="garantii-title">Гарантии</h1>
+                        </div>
+                        <ul class="block1__list">
+                            <li class="block1__item">
+                                <img src="image/block1/icon-cargo.svg" alt="" width="25" height="25">
+                                <span>Сохранность груза и транзитных сроков</span>
+                            </li>
+                            <li class="block1__item">
+                                <img src="image/block1/icon-money.svg" alt="" width="25" height="25">
+                                <span>Финансовые взаимовыгодные гарантии</span>
+                            </li>
+                            <li class="block1__item">
+                                <img src="image/block1/icon-time.svg" alt="" width="25" height="25">
+                                <span>Работа клиентского сервиса и контакты</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="block1__button" type="button">задать вопрос</button>
+                </div>
+                <div class="block1__media">
+                    <img class="block1__photo" src="image/block1/hero.png" alt="Рукопожатие партнёров">
+                    <div class="block1__chips">
+                        <p class="block1__chip">100% финансовая ответственность</p>
+                        <p class="block1__chip">Гарантия фиксированной цены</p>
+                        <p class="block1__chip">Выгодное страхование груза</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block2" id="why-safe">
+            <div class="section-container">
+                <h2 class="block2__title">Почему с нами безопасно?</h2>
+                <div class="block2__list">
+                    <article class="block2__card">
+                        <span class="block2__glow" aria-hidden="true"></span>
+                        <h3 class="block2__card-title">
+                            <img src="image/block2/icon-finance.svg" alt="" width="27" height="27">
+                            Финансовые гарантии и ответственность
+                        </h3>
+                        <ul class="block2__points">
+                            <li><strong>100% финансовая ответственность за груз:</strong> компания несет полную
+                                материальную ответственность за груз с момента его получения на складе в Китае и до
+                                передачи клиенту.</li>
+                            <li><strong>Страхование грузов:</strong> все грузы, принимаемые к перевозке, обязательно
+                                страхуются на полную инвойсную стоимость. Страховщиком является банк-партнер
+                                «Совкомбанк».</li>
+                            <li><strong>Гарантия фиксированной цены:</strong> если стоимость доставки зафиксирована в
+                                договоре, она не изменится в одностороннем порядке (за исключением случаев, прописанных
+                                в договоре, например, изменения параметров груза перевозчиков).</li>
+                        </ul>
+                    </article>
+                    <article class="block2__card">
+                        <span class="block2__glow" aria-hidden="true"></span>
+                        <h3 class="block2__card-title">
+                            <img src="image/block2/icon-time-acute.svg" alt="" width="30" height="30">
+                            Гарантии сроков
+                        </h3>
+                        <ul class="block2__points">
+                            <li><strong>Ответственность за сроки:</strong> компания гарантирует соблюдение сроков,
+                                указанных в коммерческом предложении и договоре, если на это не повлияют независящие от
+                                компании обстоятельства.</li>
+                            <li><strong>Что происходит при задержке?</strong> Если задержка случилась по&nbsp;нашей
+                                вине, мы
+                                предоставляем альтернативное решение для вашей поставки или скидку на следующую
+                                поставку.</li>
+                            <li><strong>Прозрачность причин задержек:</strong> сроки могут быть увеличены по объективным
+                                причинам (задержки поставщика, действия таможенных органов, форс-мажор). Мы заранее
+                                согласуем дату готовности груза у поставщика через наше китайское юр.лицо. Также
+                                прорабатываем документы для груза сразу после заключения договора с клиентом.</li>
+                        </ul>
+                    </article>
+                    <article class="block2__card">
+                        <span class="block2__glow" aria-hidden="true"></span>
+                        <h3 class="block2__card-title">
+                            <span class="block2__packs" aria-hidden="true">
+                                <img src="image/block2/icon-pack-c.svg" alt="" width="19" height="19">
+                                <img src="image/block2/icon-pack-b.svg" alt="" width="19" height="19">
+                                <img src="image/block2/icon-pack-a.svg" alt="" width="19" height="19">
+                            </span>
+                            Гарантии сохранности груза
+                        </h3>
+                        <ul class="block2__points">
+                            <li><strong>Проверка упаковки:</strong> целостность проверяется при заборе у поставщика, на
+                                границе КНР и нашем терминале. Производится фотоотчет.</li>
+                            <li><strong>Переупаковка:</strong> при выявлении критических повреждений упаковки груз будет
+                                переупакован для безопасной транспортировки.</li>
+                            <li><strong>Условия хранения:</strong> мы владеем собственным СВХ и таможенным складом. Наш
+                                терминал оснащен дронами, сотрудниками службы безопасности, КПП и обзорной вышкой.</li>
+                        </ul>
+                    </article>
+                    <article class="block2__card">
+                        <span class="block2__glow" aria-hidden="true"></span>
+                        <h3 class="block2__card-title">
+                            <img src="image/block2/icon-customs.svg" alt="" width="30" height="30">
+                            Гарантии юридической чистоты и прохождения таможни
+                        </h3>
+                        <ul class="block2__points">
+                            <li><strong>Ответственность за таможенное оформление:</strong> компания гарантирует
+                                правильность подготовки декларации и разрешительных документов. Если по вине компании
+                                возникнут проблемы на таможне, она несет за это ответственность.</li>
+                            <li><strong>Гарантия «белого» импорта:</strong> компания является таможенным представителем
+                                и работает официально. Это гарантирует, что клиент не получит штрафов и проблем с
+                                налоговой.</li>
+                            <li><strong>Конфиденциальность:</strong> гарантия неразглашения коммерческой информации
+                                клиента.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="block3" id="service-guarantees">
+            <div class="section-container">
+                <div class="block3__intro">
+                    <h2 class="block3__title block3__reveal">Сервисные гарантии</h2>
+                </div>
+                <div class="block3__grid">
+                    <div class="block3__media block3__reveal">
+                        <img class="block3__image" src="image/block3/boxes.png" alt="Картонные коробки" width="163"
+                            height="209">
+                    </div>
+                    <ul class="block3__tags">
+                        <li class="block3__tag block3__reveal">
+                            <img class="block3__tag-icon" src="image/block3/icon-manager.svg" alt="" width="44"
+                                height="44">
+                            <span class="block3__tag-text"><strong>Персональный менеджер:</strong> у вас будет
+                                персональный менеджер, который всегда на<br class="block3__break">связи.</span>
+                        </li>
+                        <li class="block3__tag block3__reveal">
+                            <img class="block3__tag-icon" src="image/block3/icon-report.svg" alt="" width="50"
+                                height="50">
+                            <span class="block3__tag-text"><strong>Прозрачность отчетности:</strong>
+                                предоставление полного пакета закрывающих документов в<br class="block3__break">срок.</span>
+                        </li>
+                        <li class="block3__tag block3__reveal">
+                            <img class="block3__tag-icon" src="image/block3/icon-supplier.svg" alt="" width="50"
+                                height="50">
+                            <span class="block3__tag-text"><strong>Коммуникация с поставщиком:</strong> если
+                                компания берет на себя переговоры с китайскими поставщиками, гарантируем защиту
+                                интересов клиента.</span>
+                        </li>
+                    </ul>
+                    <ul class="block3__tags">
+                        <li class="block3__tag block3__reveal">
+                            <img class="block3__tag-icon" src="image/block3/icon-storage.svg" alt="" width="44"
+                                height="44">
+                            <span class="block3__tag-text"><strong>Бесплатное хранение на нашем СВХ:</strong> груз
+                                находится на терминале бесплатно, пока идёт подготовка документов или оформление.</span>
+                        </li>
+                        <li class="block3__tag block3__reveal">
+                            <img class="block3__tag-icon" src="image/block3/icon-contract.svg" alt="" width="44"
+                                height="34">
+                            <span class="block3__tag-text"><strong>«Второе мнение» по документам
+                                    поставщика:</strong> проверка контракта с поставщиком до подписания — на риски и
+                                замену пунктов в вашу пользу.</span>
+                        </li>
+                        <li class="block3__tag block3__reveal">
+                            <img class="block3__tag-icon" src="image/block3/icon-estimate.svg" alt="" width="50"
+                                height="50">
+                            <span class="block3__tag-text"><strong>Прозрачность сметы без скрытых
+                                    платежей:</strong> в КП прописываются все расходы. Никаких «доплатите за оформление»
+                                или «с вас ещё за простой» — итоговая сумма совпадает с той, что была в КП.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="block4">
+            <div class="block4__container">
+                <h2 class="block4__h1">Полноценный ВЭД-аутсорсинг для вашего бизнеса</h2>
+                <div class="block4__content">
+                    <div class="block4__part1">
+                        <img src="image/block4/photo1.webp" alt="Специалисты за работой" class="block4__part1-img">
+                    </div>
+                    <div class="block4__part2">
+                        <div class="block4__part2-block">
+                            <h3 class="block4__part2-title">Таможенные <br class="block4__break">специалисты</h3>
+                            <p class="block4__part2-text">Мы можем уплачивать за Вас налоги и пошлины. Участвовать
+                                в проведении таможенной процедуры. <br>Возьмём за Вас ответственность перед таможенными
+                                органами и проведём весь комплекс услуг ВЭД без ваших трудозатрат.</p>
+                        </div>
+                        <div class="block4__part2-block block4__part2-block--green">
+                            <h3 class="block4__part2-title">Владельцы собственных складов</h3>
+                            <p class="block4__part2-text">Владеем складом временного хранения и&nbsp;таможенным
+                                складом.</p>
+                            <ul class="block4__part2-list">
+                                <li class="block4__part2-list-item">Можем хранить ваш груз до 3-х лет без пошлин;
+                                </li>
+                                <li class="block4__part2-list-item">Наносить маркировку «Честный знак» и ЕАЭС;</li>
+                                <li class="block4__part2-list-item">Храним самоходную и спецтехнику;</li>
+                                <li class="block4__part2-list-item">Принимаем негабаритный груз</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block4__part3">
+                        <img src="image/block4/photo2.webp" alt="Команда на совещании" class="block4__part3-img">
+                        <div class="block4__part3-text-block">
+                            <img src="image/block4/bar.webp" alt="" class="block4__part3-bar">
+                            <div class="block4__part3-counter" id="counter2000">0+</div>
+                            <p class="block4__part3-text">КЛИЕНТОВ ПО ВСЕЙ РОССИИ УСПЕШНО&nbsp;РАЗВИВАЮТ <br
+                                    class="block4__break">СВОЙ БИЗНЕС С&nbsp;КИТАЕМ <br class="block4__break">С НАМИ ЕЖЕГОДНО</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block4__footer">
+                    <p class="block4__footer-text">Узнать подробные условия сотрудничества можно на консультации с
+                        нашими менеджерами</p>
+                    <button class="block4__footer-button" type="button">Получить консультацию</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="block5">
+            <div class="section-container">
+                <h2 class="block5__h1">Наша команда</h2>
+                <div class="block5__cards">
+                    <div class="block5__cards-wrapper">
+                        <article class="block5__card">
+                            <img src="image/block5/person1.webp" alt="Юрий Степко" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Юрий Степко</h3>
+                                <p class="block5__card-text">Коммерческий директор STA «Сибирьтрансазия». Работает
+                                    в компании с 2011 года. Опыт работы в ВЭД - 15 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person2.webp" alt="Андрей Стегниенко" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Андрей Стегниенко</h3>
+                                <p class="block5__card-text">Руководитель таможенного отдела.
+                                    Работал&nbsp;начальником таможенного поста. Опыт работы в ВЭД - 25 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person3.webp" alt="Анастасия Смоленцева" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Анастасия Смоленцева</h3>
+                                <p class="block5__card-text">Руководитель отдела бухгалтерии. Доктор экономических
+                                    наук. Опыт работы в ВЭД - 7&nbsp;лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person4.webp" alt="Евгений Ситников" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Евгений Ситников</h3>
+                                <p class="block5__card-text">Руководитель отдела поиска. Лично занимается
+                                    инспекцией товаров 5+ лет. Опыт работы в ВЭД - 7 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person5.webp" alt="Дарья Кудашева" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Дарья Кудашева</h3>
+                                <p class="block5__card-text">Руководитель отдела маркетинга. Опыт&nbsp;работы в
+                                    маркетинге 7+ лет. Опыт работы в ВЭД - 4 года.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person6.webp" alt="Алексей Тарасов" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Алексей Тарасов</h3>
+                                <p class="block5__card-text">Руководитель отдела продаж. Опыт в международной
+                                    логистике - 19 лет. Опыт&nbsp;работы в ВЭД - 14 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person7.webp" alt="Анастасия Асочакова" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Анастасия Асочакова</h3>
+                                <p class="block5__card-text">Менеджер высшей категории. Специалист&nbsp;по грузам
+                                    из ЮВА. Опыт работы&nbsp;в ВЭД - 8 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person8.webp" alt="Эдуард Татарников" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Эдуард Татарников</h3>
+                                <p class="block5__card-text">Менеджер высшей категории. <br>Работает в компании с
+                                    2016 года. <br>Опыт работы в ВЭД - 8 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person9.webp" alt="Алексей Юдин" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Алексей Юдин</h3>
+                                <p class="block5__card-text">Менеджер по работе с клиентами. Специалист по товарам
+                                    для селлеров. Опыт&nbsp;работы в ВЭД - 5 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person10.webp" alt="Мария Прибыльцова" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Мария Прибыльцова</h3>
+                                <p class="block5__card-text">Менеджер по работе с клиентами. Специалист по
+                                    негабаритным грузам. Опыт&nbsp;работы в ВЭД - 10 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person11.webp" alt="Артем Пушков" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Артем Пушков</h3>
+                                <p class="block5__card-text">Менеджер по работе с клиентами. Работает&nbsp;в
+                                    компании с 2022 года. Опыт&nbsp;работы в ВЭД - 5 лет.</p>
+                            </div>
+                        </article>
+                        <article class="block5__card">
+                            <img src="image/block5/person12.webp" alt="Екатерина Каплина" class="block5__card-img">
+                            <div class="block5__card-content">
+                                <h3 class="block5__card-h2">Екатерина Каплина</h3>
+                                <p class="block5__card-text">Менеджер по работе с клиентами. Специалист по ТНП.
+                                    Опыт работы в ВЭД - 3&nbsp;лет.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="block5__nav">
+                    <div class="block5__pagination">
+                        <span class="block5__pagination-dot block5__pagination-dot--active"></span>
+                        <span class="block5__pagination-dot"></span>
+                        <span class="block5__pagination-dot"></span>
+                        <span class="block5__pagination-dot"></span>
+                        <span class="block5__pagination-dot"></span>
+                        <span class="block5__pagination-dot"></span>
+                    </div>
+                    <button type="button" class="block5__more-btn">
+                        <span>Подробнее</span>
+                        <img src="image/block5/vector.svg" alt="" class="block5__more-btn-icon">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="block6">
+            <div class="section-container">
+                <h2 class="block6__h1">Наши офисы</h2>
+                <div class="block6__cards">
+                    <div class="block6__cards-wrapper">
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Москва</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">Ул. Сущевский Вал, 5, стр. 3, офис 511</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (495) 085-70-44</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Новосибирск</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">пр-т Дзержинского 1/1, офис 71</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (383) 207-88-60</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Санкт-Петербург</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">пр-т Обуховской Обороны, 271</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (812) 424-33-13</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Екатеринбург</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">ул. Завокзальная, 5а, офис 306</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (343) 357-97-75</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Омск</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">ул. Маяковского, 81</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (381) 297-20-30</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Урумчи</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">ТК "Сиюй", ул. Фугуанг, склад А287</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (1086) 139-991-22-706</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                        <article class="block6__card">
+                            <h3 class="block6__card-city">Тачэн</h3>
+                            <div class="block6__card-item">
+                                <img src="image/block6/Location.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">新疆塔城三宝库区</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/tel.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">8 (1086) 180-996-10-022</p>
+                            </div>
+                            <div class="block6__card-item">
+                                <img src="image/block6/mail.svg" alt="" class="block6__card-icon">
+                                <p class="block6__card-text">info@sibtransasia.ru</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var section = document.querySelector('.block2');
+            if (!section) return;
+            var cards = section.querySelectorAll('.block2__card');
+            var started = false;
+
+            cards.forEach(function (card) {
+                var glow = card.querySelector('.block2__glow');
+                if (!glow) return;
+                card.addEventListener('mousemove', function (e) {
+                    var rect = card.getBoundingClientRect();
+                    glow.style.left = (e.clientX - rect.left) + 'px';
+                    glow.style.top = (e.clientY - rect.top) + 'px';
+                    glow.style.opacity = '1';
+                });
+                card.addEventListener('mouseleave', function () {
+                    glow.style.opacity = '0';
+                });
+            });
+
+            function show() {
+                if (started) return;
+                started = true;
+                section.classList.add('block2--ready');
+                requestAnimationFrame(function () {
+                    requestAnimationFrame(function () {
+                        section.classList.add('block2--animated');
+                    });
+                });
+            }
+
+            if (!('IntersectionObserver' in window)) {
+                show();
+                return;
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    show();
+                    observer.disconnect();
+                });
+            }, { threshold: 0.05 });
+            observer.observe(section);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var block4 = document.querySelector('.block3');
+            if (!block4) return;
+            var reveals = block4.querySelectorAll('.block3__reveal');
+            reveals.forEach(function (el, index) {
+                el.style.animationDelay = (0.15 + index * 0.22) + 's';
+            });
+            function show() {
+                block4.classList.add('block3--animated');
+            }
+            if (!('IntersectionObserver' in window)) {
+                show();
+                return;
+            }
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    show();
+                    observer.disconnect();
+                });
+            }, { threshold: 0.2 });
+            observer.observe(block4);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var cardsWrapper = document.querySelector('.block5__cards-wrapper');
+            var cards = document.querySelectorAll('.block5__card');
+            var dots = document.querySelectorAll('.block5__pagination-dot');
+            var block4Cards = document.querySelector('.block5__cards');
+            if (!cardsWrapper || !cards.length || !dots.length) return;
+
+            var currentDot = 0;
+
+            function getCardsPerView() {
+                if (window.innerWidth <= 500) return 1;
+                return window.innerWidth <= 1000 ? 2 : 3;
+            }
+
+            function getTotalDots() {
+                return Math.ceil(cards.length / getCardsPerView());
+            }
+
+            function showCards(dotIndex) {
+                if (window.innerWidth <= 500) {
+                    cardsWrapper.style.transform = 'none';
+                    return;
+                }
+                var cardsPerView = getCardsPerView();
+                var totalDots = getTotalDots();
+                var cardWidth = cards[0].offsetWidth;
+                var gap = parseFloat(window.getComputedStyle(cardsWrapper).gap) || 30;
+                cardsWrapper.style.transform = 'translateX(' + (-(dotIndex * cardsPerView) * (cardWidth + gap)) + 'px)';
+                dots.forEach(function (dot, idx) {
+                    dot.classList.toggle('block5__pagination-dot--active', idx === dotIndex);
+                    dot.style.display = idx < totalDots ? 'block' : 'none';
+                });
+                currentDot = dotIndex;
+            }
+
+            dots.forEach(function (dot, index) {
+                dot.addEventListener('click', function () {
+                    if (window.innerWidth <= 500 || index >= getTotalDots()) return;
+                    showCards(index);
+                });
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth <= 500) {
+                    cardsWrapper.style.transform = 'none';
+                    return;
+                }
+                if (currentDot >= getTotalDots()) currentDot = 0;
+                showCards(currentDot);
+            });
+
+            showCards(0);
+
+            var moreBtn = document.querySelector('.block5__more-btn');
+            if (moreBtn) {
+                var expanded = false;
+                moreBtn.addEventListener('click', function () {
+                    expanded = !expanded;
+                    cardsWrapper.classList.toggle('block5__cards-wrapper--expanded', expanded);
+                    moreBtn.classList.toggle('block5__more-btn--expanded', expanded);
+                    moreBtn.querySelector('span').textContent = expanded ? 'Свернуть' : 'Подробнее';
+                    block4Cards.style.maxHeight = expanded ? cardsWrapper.scrollHeight + 'px' : '';
+                    block4Cards.style.overflow = expanded ? 'visible' : '';
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var cardsWrapper = document.querySelector('.block6__cards-wrapper');
+            var block6Cards = document.querySelector('.block6__cards');
+            var originalCards = document.querySelectorAll('.block6__card:not(.block6__card--clone)');
+            if (!cardsWrapper || !originalCards.length || !block6Cards || window.innerWidth <= 450) return;
+
+            originalCards.forEach(function (card) {
+                var clone = card.cloneNode(true);
+                clone.classList.add('block6__card--clone');
+                clone.setAttribute('aria-hidden', 'true');
+                cardsWrapper.appendChild(clone);
+            });
+
+            var scrollPosition = 0;
+            var isScrolling = false;
+
+            function maxScroll() {
+                return (window.innerWidth <= 700 ? cardsWrapper.scrollHeight : cardsWrapper.scrollWidth) / 2;
+            }
+
+            function updatePosition() {
+                if (window.innerWidth <= 450) {
+                    cardsWrapper.style.transform = 'none';
+                    return;
+                }
+                var limit = maxScroll();
+                if (scrollPosition >= limit) scrollPosition -= limit;
+                else if (scrollPosition < 0) scrollPosition += limit;
+                cardsWrapper.style.transform = window.innerWidth <= 700
+                    ? 'translateY(-' + scrollPosition + 'px)'
+                    : 'translateX(-' + scrollPosition + 'px)';
+            }
+
+            block6Cards.addEventListener('wheel', function (event) {
+                if (window.innerWidth <= 450 || isScrolling) return;
+                event.preventDefault();
+                isScrolling = true;
+                var gap = window.innerWidth <= 700 ? 20 : 30;
+                var size = window.innerWidth <= 700 ? originalCards[0].offsetHeight : originalCards[0].offsetWidth;
+                scrollPosition += (event.deltaY > 0 ? 1 : -1) * (size + gap) * 0.5;
+                updatePosition();
+                setTimeout(function () { isScrolling = false; }, 50);
+            }, { passive: false });
+
+            updatePosition();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var block3Content = document.querySelector('.block4__content');
+            var counterElement = document.getElementById('counter2000');
+            if (!block3Content) return;
+
+            var part1Img = document.querySelector('.block4__part1-img');
+            var part2Blocks = document.querySelectorAll('.block4__part2-block');
+            var part2Block1 = Array.prototype.find.call(part2Blocks, function (block) {
+                return !block.classList.contains('block4__part2-block--green');
+            });
+            var part2Block2 = document.querySelector('.block4__part2-block--green');
+            var part3Img = document.querySelector('.block4__part3-img');
+            var part3TextBlock = document.querySelector('.block4__part3-text-block');
+            var counterStarted = false;
+
+            function animateCounter() {
+                if (!counterElement || counterStarted) return;
+                counterStarted = true;
+                var start = Date.now();
+                function tick() {
+                    var progress = Math.min((Date.now() - start) / 2000, 1);
+                    var value = Math.floor((1 - Math.pow(1 - progress, 4)) * 2000);
+                    counterElement.textContent = (progress < 1 ? value : 2000) + '+';
+                    if (progress < 1) requestAnimationFrame(tick);
+                }
+                tick();
+            }
+
+            function reveal(element, className, delay) {
+                if (!element) return;
+                setTimeout(function () {
+                    element.classList.add(className);
+                }, delay);
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    reveal(part1Img, 'block4__part1-img--animate', 0);
+                    reveal(part2Block1, 'block4__part2-block--animate', 200);
+                    reveal(part2Block2, 'block4__part2-block--animate', 400);
+                    reveal(part3Img, 'block4__part3-img--animate', 200);
+                    reveal(part3TextBlock, 'block4__part3-text-block--animate', 400);
+                    setTimeout(animateCounter, 700);
+                    observer.disconnect();
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(block3Content);
+        });
+    </script>
+</body>
+
+</html>
